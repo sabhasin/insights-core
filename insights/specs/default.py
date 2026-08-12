@@ -658,6 +658,7 @@ class DefaultSpecs(Specs):
     )
     pcs_quorum_status = simple_command("/usr/sbin/pcs quorum status")
     pcs_status = simple_command("/usr/sbin/pcs status")
+    pesign_show_signature_shimx64 = simple_command("/usr/bin/pesign --show-signature --in=/boot/efi/EFI/redhat/shimx64.efi")
     pidstat = simple_command("/usr/bin/pidstat")
     php_ini = first_file(["/etc/opt/rh/php73/php.ini", "/etc/opt/rh/php72/php.ini", "/etc/php.ini"])
     pluginconf_d = glob_file("/etc/yum/pluginconf.d/*.conf")
